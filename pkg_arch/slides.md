@@ -194,26 +194,59 @@ especially across pods (sometimes within the same pod)
 
 ---
 
-## package architecture
+### package architecture
 
-^ package architecture example!
+smaller components
+based on a domain model and the most relevant dependencies (use reasonable judgment!)
+easier to reason about
+encapsulation, isolation
+consolidates APIs
+faster tests, CI, DX
 
+^ mypy is significantly faster
+^ tests are significantly faster
+^ the goal is to be able to define a boundary where running tests on transitive dependencies is no longer necessary
 
 ---
+
+## example
+
+^ demo that shit
+
+---
+
+### could we just use ai?
+
+ai does what humans do
+
+diminishing returns with increased complexity
+
+in general, ai is less accurate when the context is too large
+
+same as a human: how do you filter through large amounts of data all in context at the same time?
+
+packages help us narrow the problems being solved into easily conceivable chunks
+
+tl;dr we can use ai to accomplish this, but today ai alone cannot substitute for good software architecture
+
+---
+
+<!---
 
 ### next up
 
 - [python style guide](https://www.notion.so/lumosapp/Python-Style-Guide-1cc3b0ad640280ccb3a0e3385152447e?pvs=4)
 - composition and inheritance
 - dependency injection + integration tests: your new best friends
+- Tofu's Spectrum of Software Maturity
 
----
+--->
 
-![fit](boqueria_lumos.jpg)
+![original](boqueria_lumos.jpg)
 
 ^ when Gaudi started on the sagrada familia, the main architecture instruments were paper, rulers and physical models made of plaster, cardboard and wood
 ^ The construction now relies on modern tech (e.g., CNC machines, computer modeling) alongside traditional methods.
 ^ Gaudi himself said he would never see it completed in his lifetime
-^ after 43 years, he was right
-^ today, the latest estimate is that construction will finally complete in 2026, after 143 years
+^ after 43 years, he was proven right
+^ today, the latest estimate is that construction will finally complete in 2026. exactly 100 years after gaudi passed.
 ^ we won't have 143 years, but we can make something fantastic in much shorter than that
